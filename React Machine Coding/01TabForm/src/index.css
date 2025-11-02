@@ -1,0 +1,14 @@
+
+.top-bar{
+display: flex;
+}
+.tab{
+  padding: 5px;
+  border: 1px solid black; 
+}
+.selected{
+  background-color: red;
+}
+.not-selected{
+  background-color: aqua;
+}

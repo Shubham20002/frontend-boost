@@ -1,0 +1,28 @@
+
+
+.accordion{
+  width: 400px;
+  background-color: aqua;
+  padding: 10px;
+  margin: auto;
+}
+.accordion-item{
+margin-left: 40px;
+margin-top: 10px;
+}
+.accordion-title{
+  width: 80%;
+  height: 30px;
+  /* margin: auto; */
+
+}
+.accordion-content{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 30px; 
+  justify-content: center;
+  background-color: white;
+
+}
