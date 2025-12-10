@@ -1,0 +1,12 @@
+1. What is the DOM?
+DOM (Document Object Model) is a tree-like structure representing an HTML document.
+JavaScript can use the DOM to access, modify, add, or delete elements dynamically.
+
+2. How do you select elements in the DOM?
+
+Method	                           Description
+getElementById()	               element by ID
+getElementsByClassName()	       Selects elements by class (HTMLCollection)
+getElementsByTagName()	           Selects elements by tag name
+querySelector()	                   Selects first matching element
+querySelectorAll()	               Selects all matching elements (NodeList)
