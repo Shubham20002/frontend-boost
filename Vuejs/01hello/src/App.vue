@@ -1,27 +1,28 @@
 <template>
   <div>
-  <h1>{{ name }}</h1>
-  <a v-bind:href='link'>chatgpt</a>
-  <Method/>
-  <EventBinding/>
+  <h1>hello</h1>
+  <ChildComponent :name="username" @edit-name="editname"/>
   </div>
 </template>
 
 <script>
-import Method from './components/Method.vue';
-import EventBinding from './components/EventBinding.vue';
-export default {
-  components: { Method,EventBinding },
-  name:"App",
-  data(){
-    return{
-      name:"shubham",
-      link:'https://chatgpt.com/'
+  import ChildComponent from './components/ChildComponent.vue';
+  export default {
+    components:{ChildComponent},
+    data(){
+      return{
+        username:"shubham"
+      }
+    },
+    methods:{
+      editname(name){
+        this.username=name
+
+      }
     }
   }
-}
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

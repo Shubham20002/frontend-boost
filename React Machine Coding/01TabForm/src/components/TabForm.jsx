@@ -20,10 +20,10 @@ function TabForm() {
 
     ]
    const [data,SetData]=useState({
-    peofile:{
+    profile:{
         name:"shubham",
         age:23
-    }
+    },Intrests:[],Setting:[]
    })
     const [activeTab,setActiveTab]=useState(0);
 
@@ -41,7 +41,7 @@ function TabForm() {
         })}
     </div>
     <div>
-        <Activecomponent/>
+        <Activecomponent data={data} setData={SetData} />
     </div>
     </>
   )
